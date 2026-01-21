@@ -71,10 +71,10 @@ const App = () => {
   const paginatorTemplate = {
     layout: "CurrentPageReport PrevPageLink PageLinks NextPageLink",
     CurrentPageReport: (options: PaginatorCurrentPageReportOptions) => {
-      return (
+        return (
         <span style={{ color: "#6c757d", marginRight: "auto" }}>
-          Showing <b>{options.first + 1}</b> to
-          <b>{Math.min(options.first + options.rows, options.totalRecords)}</b>
+          Showing <b>{options.first}</b> to
+          <b>{options.last}</b>
           of <b>{options.totalRecords}</b> entries
         </span>
       );
